@@ -7,6 +7,10 @@
 //
 
 import UIKit
+//导入第三方库
+import SnapKit
+
+import Kingfisher
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.window?.rootViewController = MainTabBarController()
+        /*
+         pod 'Alamofire', '~> 3.4'
+         pod 'Kingfisher', '~> 2.4'
+         pod 'SnapKit', '~> 0.15.0'
+         pod 'XWSwiftRefresh', '~> 0.1.9'
+         pod 'SwiftyJSON'
+         */
+        
         return true
     }
 
