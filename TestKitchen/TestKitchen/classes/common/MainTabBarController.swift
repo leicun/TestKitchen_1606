@@ -146,8 +146,9 @@ class MainTabBarController: UITabBarController {
     
     
     func clickBtn(curBtn:UIButton){
+        
     
-        let lastBtnView = self.view.viewWithTag(300+selectedIndex)
+        let lastBtnView = bgView!.viewWithTag(300+selectedIndex)
         
         if let tmpBtn = lastBtnView{
             let lastBtn = tmpBtn as! UIButton

@@ -27,6 +27,11 @@ class CBRecommendADCell: UITableViewCell {
     
     func showData(){
         
+        //删除子视图
+        for sub in scrollView.subviews{
+            sub.removeFromSuperview()
+        }
+        
         let cnt = bannerArray?.count
         if cnt > 0 {
             
@@ -88,6 +93,7 @@ class CBRecommendADCell: UITableViewCell {
             
             //修改分页控件
             pageControl.numberOfPages = cnt!
+            scrollView.showsHorizontalScrollIndicator = false
             
             //设置代理
             scrollView.delegate = self

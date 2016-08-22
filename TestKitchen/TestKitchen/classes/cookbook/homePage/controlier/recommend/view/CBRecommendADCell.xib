@@ -22,6 +22,8 @@
                             <constraint firstAttribute="width" constant="60" id="Yas-6G-S3b"/>
                             <constraint firstAttribute="height" constant="37" id="yaN-9k-CzM"/>
                         </constraints>
+                        <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="currentPageIndicatorTintColor" red="0.99818497470000001" green="0.29359230269999997" blue="0.26081433840000001" alpha="1" colorSpace="calibratedRGB"/>
                     </pageControl>
                 </subviews>
                 <constraints>

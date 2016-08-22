@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="redPacketCellId" id="KGk-i7-Jjw" customClass="CBRedPacketCell" customModule="TestKitchen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CAR-ze-5G5" userLabel="ScrollView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="CAR-ze-5G5" secondAttribute="bottom" id="NwH-zJ-x3h"/>
+                    <constraint firstItem="CAR-ze-5G5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZZN-Wo-Ixs"/>
+                    <constraint firstItem="CAR-ze-5G5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nk1-e7-EM7"/>
+                    <constraint firstAttribute="trailing" secondItem="CAR-ze-5G5" secondAttribute="trailing" id="wXu-Eo-fzz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="scrollView" destination="CAR-ze-5G5" id="lQX-Fp-swc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
